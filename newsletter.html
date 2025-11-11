@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Suscripción Newsletter — Nombre del Artista</title>
+</head>
+<body>
+  <header>
+    <h1>Inscríbete en la Newsletter</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="discografia.html">Discografía</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulario de inscripción</h2>
+      <!-- nota: action puede ser a un servicio real o '#' si sólo es práctica -->
+      <form action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <label for="nombre">Nombre:</label>
+          <input id="nombre" name="nombre" type="text" required>
+
+          <label for="apellidos">Apellidos:</label>
+          <input id="apellidos" name="apellidos" type="text" required>
+
+          <label for="edad">Edad:</label>
+          <input id="edad" name="edad" type="number" min="13" max="120" required>
+
+          <label for="pais">País:</label>
+          <select id="pais" name="pais" required>
+            <option value="">--Selecciona--</option>
+            <option value="es">España</option>
+            <option value="mx">México</option>
+            <option value="ar">Argentina</option>
+            <!-- más países -->
+          </select>
+
+          <label for="email">Correo electrónico:</label>
+          <input id="email" name="email" type="email" required>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Intereses</legend>
+          <p>Marca lo que te interesa:</p>
+
+          <input type="checkbox" id="news" name="intereses" value="novedades">
+          <label for="news">Novedades y lanzamientos</label><br>
+
+          <input type="checkbox" id="conciertos" name="intereses" value="conciertos">
+          <label for="conciertos">Conciertos y giras</label><br>
+
+          <input type="checkbox" id="merch" name="intereses" value="merch">
+          <label for="merch">Merch y ofertas</label>
+        </fieldset>
+
+        <button type="submit">Suscribirme</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 weezer</p>
+  </footer>
+</body>
+</html>

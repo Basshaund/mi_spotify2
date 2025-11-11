@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weezer</title> <!-- Texto que aparece en la pestaña del navegador -->
+    <!-- Ícono de la pestaña -->
+    <link rel="icon" href="./assets/imagenes/logo.png" type="image/jpeg">
+
+    <style> 
+        body{
+          background-color: rgb(76, 139, 222); /*Color de fondo*/
+        }
+
+        container1 {
+          display: grid;
+          background-image: url("./assets/imagenes/logo-2.png");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-color: aqua; /*todo es te bloque es como poner un banner en css-->*/
+        }
+        container2{
+          display: flex; /* cada vez que quiera hacer un menu uno al lado de otro coloco flex*/
+        }
+        
+        .imagenes{
+          width: 300px;
+          height: 300px;
+        }
+    </style>
+
+</head>
+<body>
+  <container1> 
+    <!--usamos container por que es una manera mas felxible de hacer cloques en una pagina-->
+    <div> 
+      <!--div es para crear bloques que se colocan uno al lado de otro-->
+      <h1><br> <br></h1> 
+    </DIV>
+  </container1>
+
+  <header>
+    <h1>La best banda del fokin worl</h1>
+    <img src="./assets/imagenes/fondo3.jpg" width="600" height="200">
+      <!-- menu incluido -->
+  </header>
+  
+  <container2>
+      <div>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <ul>
+          <li><a href="discografia.html">Discografía</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><a href="newsletter.html">Newsletter</a></li>
+        </ul>
+      </div>
+    </container2>
+
+  <main>
+    <section>
+      <h2>Buenas tardes</h2>
+      <p>Hoy les vengo a hablar de una banda friki como yo, Weezer!</p>
+      <img src="./assets/imagenes/mad-cool.jpg" width="500" alt="foto de weezerd en mad cool">
+      <br>
+      <img src="./assets/imagenes/yo_en_mad_cool.jpg" width="500" alt="foto de yo en primera fila viendo a weezerd en mad cool">
+    </section>
+
+    <aside>
+      <h3>Próximos conciertos?</h3>
+      <p>Pues la verdad ni idea, pero la ultima vez que los vi de tour fue en el mad cool de madrid, seguro regresan la proxima</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Weezerd</p>
+  </footer>
+</body>
+</html>
